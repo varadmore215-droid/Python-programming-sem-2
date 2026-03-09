@@ -1,0 +1,18 @@
+# A shopping app stores product prices in a list. Find total bill.
+"""
+Created on Mon Mar  9 15:43:43 2026
+
+@author: Varad
+"""
+prices = [19.99, 5.50, 10.00, 2.75]
+tax_rate = 0.05
+total = 0
+
+for price in prices:
+    total += price
+
+# Adding tax at the end
+final_bill = total * (1 + tax_rate)
+
+print(f"Subtotal: ${total:.2f}")
+print(f"Final Bill (with tax): ${final_bill:.2f}")
