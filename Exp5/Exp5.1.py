@@ -1,8 +1,8 @@
 # Creating an empty dictionary
 """
-Created on Mon Mar  9 14:50:30 2026
+Created on Mon Mar  9 14:54:32 2026
 
-@author: varad
+@author: Varad
 """
 student = {}
 # Adding key-value pairs
