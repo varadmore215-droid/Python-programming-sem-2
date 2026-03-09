@@ -1,6 +1,9 @@
 # Creating an empty dictionary
+"""
+Created on Mon Mar  9 14:50:30 2026
 
-
+@author: varad
+"""
 student = {}
 # Adding key-value pairs
 student["name"] = "Rahul"
