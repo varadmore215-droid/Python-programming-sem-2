@@ -1,17 +1,27 @@
-#  stores roll numbers in sets. Find students present in both classes.
+# A shop inventory dictionary stores item name and quantity. Add new stock.
 """
-Created on Mon Mar  9 15:32:18 2026
+Created on Mon Mar  9 15:37:01 2026
 
 @author: Varad
 """
-# Roll numbers present in Class A and Class B
-class_a = {101, 102, 105, 108, 110}
-class_b = {102, 103, 108, 112, 115}
 
-# Find students present in both
-present_in_both = class_a.intersection(class_b)
+inventory = {"Apples": 50, "Bananas": 20}
 
-# Alternatively, using the & operator:
-# present_in_both = class_a & class_b
+item = "Apples"
+added_quantity = 30
 
-print(f"Students present in both: {present_in_both}")
+if item in inventory:
+    inventory[item] += added_quantity  # Adds to existing 50
+else:
+    inventory[item] = added_quantity   # Creates new entry if not found
+   
+from collections import defaultdict
+
+# Initialize with int (which defaults to 0)
+inventory = defaultdict(int, {"Apples": 50, "Bananas": 20})
+
+# No check needed!
+inventory["Apples"] += 30
+inventory["Oranges"] += 15
+
+print(dict(inventory))
