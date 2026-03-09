@@ -2,7 +2,7 @@
 """
 Created on Mon Mar  2 15:34:18 2026
 
-@author: swapnil
+@author: varad
 """
 
 marks =  [85, 56, 78, 56, 90 ]
