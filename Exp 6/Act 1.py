@@ -15,7 +15,7 @@ def add_expense(amount, description):
     with open(FILE_NAME, "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow([date, description, amount])
-    print(f"✅ Saved: ${amount} for {description}")
+    print(f"✅ Saved: {amount} for {description}")
 
 def calculate_monthly_total(month_year):
     """month_year format should be 'YYYY-MM'"""
@@ -42,4 +42,4 @@ if action == "add":
 elif action == "total":
     target = input("Enter month (YYYY-MM): ")
     result = calculate_monthly_total(target)
-    print(f"💰 Total for {target}: ${result:.2f}")
+    print(f"💰 Total for {target}: {result:.2f}")
